@@ -1,1 +1,2 @@
-# vistula-playground
+# vistula-java-programowanie
+
