@@ -2,23 +2,28 @@ package org.vistula.slawek;
 
 import org.junit.Test;
 
-import java.util.Scanner;
-
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class MyAwesomeTest {
+    private int five = 5;
+    private int six = 6;
 
     private int maximum = Integer.MAX_VALUE;
-    private int minumum = Integer.MIN_VALUE;
+    private int minimum = Integer.MIN_VALUE;
 
     @Test
     public void awesomeTest() {
-        String blabla = "There should be 4 cows";
-        assertThat(getNumberOfCows(blabla)).isEqualTo(4);
+        assertThat(minimum).isEqualTo(-2147483648);
+        assertThat(add(five, six)).isEqualTo(11);
+        assertThat(divide(six, five));
     }
 
-    private int getNumberOfCows(String blabla) {
-       return Integer.parseInt(blabla.substring(16,17));
+    private int add(int a, int b) {
+        return a+b;
+    }
+
+    private int divide(int a, int b) {
+        return a/b;
     }
 
 }

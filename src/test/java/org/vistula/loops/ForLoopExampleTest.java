@@ -14,16 +14,4 @@ public class ForLoopExampleTest {
         }
     }
 
-    @Test
-    public void collectionFor() {
-        ArrayList<WebPage> webPages = new ArrayList<WebPage>();
-        webPages.add(new WebPage("title1"));
-        webPages.add(new WebPage("title2"));
-        webPages.add(new WebPage("title3"));
-        webPages.add(new WebPage("title4"));
-
-        for (WebPage webPage : webPages) {
-            System.out.println(webPage.getTitle());
-        }
-    }
 }
