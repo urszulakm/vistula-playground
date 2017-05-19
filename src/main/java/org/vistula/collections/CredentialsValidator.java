@@ -21,8 +21,6 @@ public class CredentialsValidator {
     }
 
     public boolean areCredentialsValid(String login, String password) {
-        assertThat(login).isNotNull();
-        assertThat(password).isNotNull();
         return true;
     }
 }
