@@ -2,8 +2,6 @@ package org.vistula.collections;
 
 import java.util.HashMap;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 public class CredentialsValidator {
 
     private HashMap<String, String> credentials;
