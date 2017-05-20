@@ -14,7 +14,7 @@ public class WebPageTest {
         WebPage p1 = new WebPage("someTitle");
         WebPage p2 = new WebPage("someTitle");
 
-        assertThat(p1).isEqualTo(p2);
+        assertThat(p1).isEqualToComparingFieldByField(p2);
     }
 
     @Test
