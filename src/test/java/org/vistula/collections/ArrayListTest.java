@@ -5,6 +5,8 @@ import org.vistula.webpage.WebPage;
 
 import java.util.ArrayList;
 
+import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
+
 public class ArrayListTest {
 
     private WebPage onet = new WebPage("onet");
@@ -37,6 +39,7 @@ public class ArrayListTest {
         webPagesEN.add(wp);
         webPagesEN.add(gazeta);
 
+        assertThat(webPages).isNotEqualTo(webPagesEN);
     }
 
 }
