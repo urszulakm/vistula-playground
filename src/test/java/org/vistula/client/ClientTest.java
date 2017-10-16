@@ -1,7 +1,6 @@
-package org.vistula.clienttest;
+package org.vistula.client;
 
 import org.junit.Test;
-import org.vistula.client.Client;
 
 import java.util.ArrayList;
 
