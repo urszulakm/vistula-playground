@@ -3,13 +3,15 @@ package org.vistula.human;
 public class Human {
 
     private int age;
-    private String name;
+    private String firstName;
+    private String lastName;
 
     public Human(){}
 
-    public Human(int age, String name) {
+    public Human(int age, String firstName, String lastName) {
         this.age = age;
-        this.name = name;
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public int getAge() {
@@ -20,11 +22,30 @@ public class Human {
         this.age = age;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public boolean canBuyAlcohol() {
+        if (age >= 18) {
+            return true;
+        }
+
+        else {
+            return false;
+        }
+    }
+
 }
