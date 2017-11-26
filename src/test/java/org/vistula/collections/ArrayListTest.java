@@ -42,4 +42,12 @@ public class ArrayListTest {
         assertThat(webPages).isNotEqualTo(webPagesEN);
     }
 
+    @Test
+    public void shouldBeCorrectTitle() {
+        ArrayList<WebPage> webPages = new ArrayList<>();
+        webPages.add(onet);
+        webPages.add(interia);
+
+        assertThat(webPages.get(0).getTitle()).isEqualTo("onet");
+    }
 }

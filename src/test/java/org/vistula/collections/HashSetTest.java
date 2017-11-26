@@ -24,12 +24,15 @@ public class HashSetTest {
         webPages.add(gazeta);
 
         HashSet<WebPage> webPagesEN = new HashSet<>();
+        webPagesEN.add(wp);
         webPagesEN.add(onet);
         webPagesEN.add(interia);
         webPagesEN.add(gazeta);
-        webPagesEN.add(wp);
+        webPagesEN.add(onet);
 
         assertThat(webPages).isEqualTo(webPagesEN);
+
+        assertThat(webPagesEN.size()).isEqualTo(4);
     }
 
 }
