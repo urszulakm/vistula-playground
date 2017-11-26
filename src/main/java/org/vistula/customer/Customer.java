@@ -8,7 +8,6 @@ public class Customer {
 
     private String firstName;
     private String lastName;
-    private String sex;
     private int age;
     private List<BasketItem> basket;
 
