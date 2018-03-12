@@ -2,8 +2,6 @@ package org.vistula.human;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class HumanTest {
@@ -53,18 +51,6 @@ public class HumanTest {
         Human slawek = new Human();
         slawek.setAge(19);
         assertThat(slawek.canBuyAlcohol()).isTrue();
-    }
-
-    @Test
-    public void shouldReturnCorrectHuman() {
-        ArrayList<Human> humans = new ArrayList<>();
-        Human jessica = new Human(18, "Jessica", "Alba");
-        Human marek = new Human(10, "Marek", "Ren");
-
-        humans.add(marek);
-        humans.add(jessica);
-
-        assertThat(humans.get(1).getAge()).isEqualTo(18);
     }
 
 }
