@@ -8,12 +8,17 @@ public class MathUtils {
     public MathUtils() {
     }
 
-    public int getNumberA() {
-        return numberA;
+    public MathUtils(int numberA, int numberB) {
+        this.numberA = numberA;
+        this.numberB = numberB;
     }
 
     public void setNumberA(int numberA) {
         this.numberA = numberA;
+    }
+
+    public int getNumberA() {
+        return numberA;
     }
 
     public int getNumberB() {
@@ -24,12 +29,28 @@ public class MathUtils {
         this.numberB = numberB;
     }
 
-    public int addNumbersInClass() {
-        return numberA+numberB;
+
+    // Nasza działalność twórcza podlegająco wyższym kosztom
+    // uzyskania przychodu 80%
+
+    public int addVariablesInClass() {
+        return numberA + numberB;
     }
 
-    public int addNumbersAsParameters(int a, int b) {
-        return a+b;
+    public int subtractVariablesInClass(){
+
+        return numberA - numberB;
     }
 
+    public int multiplyVariablesInClass(){
+        return numberA * numberB;
+    }
+
+    public float divideVariablesInClass() {
+        return (float)numberA / (float)numberB;
+    }
+
+    public int multiplyTwoParameters(int a, int b){
+        return a*b;
+    }
 }

@@ -13,7 +13,7 @@ public class ForLoopExampleTest {
 
     @Test
     public void basicForMinusLoop() {
-        // for (warunek początkowy; warunek kontynuacji; operacja na zakończenie pętli)
+
         for (int i = 10; i >= 0; i--) {
             System.out.println(i);
         }

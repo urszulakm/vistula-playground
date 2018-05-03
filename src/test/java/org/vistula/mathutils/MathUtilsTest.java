@@ -4,59 +4,70 @@ import org.junit.Test;
 
 public class MathUtilsTest {
 
-    // Dodawanie
-
     @Test
-    public void shouldCorrectlyAddNumbersSetInClass() {
-        MathUtils mathUtils = new MathUtils();
-        mathUtils.setNumberA(5);
-        mathUtils.setNumberB(6);
-        assert mathUtils.addNumbersInClass() == 11;
+    public void shouldCorrectlyAdd() {
+        MathUtils addition = new MathUtils();
+        addition.setNumberA(7);
+        addition.setNumberB(8);
+        assert addition.addVariablesInClass() == 15;
     }
 
     @Test
-    public void shouldCorrectlyAddNumbersAsParameters() {
-        MathUtils mathUtils = new MathUtils();
-        assert mathUtils.addNumbersAsParameters(4,5) == 9;
-    }
-
-    // Odejmowanie
-
-    @Test
-    public void shouldCorrectlySubtractNumbersSetInClass() {
-
-
+    public void shouldCorrectlyAddUsingDifferentConstructor() {
+        MathUtils addition = new MathUtils(7, 8);
+        assert addition.addVariablesInClass() == 15;
     }
 
     @Test
-    public void shouldCorrectlySubtractNumbersAsParameters() {
-
-    }
-
-    // Mnozenie
-
-    @Test
-    public void shouldCorrectlyMultiplyNumbersSetInClass() {
-
-
+    public void shouldCorrectlyAddSecondTest() {
+        MathUtils addition = new MathUtils();
+        addition.setNumberA(-8);
+        addition.setNumberB(8);
+        assert addition.addVariablesInClass() == 0;
     }
 
     @Test
-    public void shouldCorrectlyMultiplyNumbersAsParameters() {
 
-    }
+    public void shouldCorrectlySubtract() {
+        MathUtils subtraction = new MathUtils();
+        subtraction.setNumberA(10);
+        subtraction.setNumberB(5);
 
-    // Dzielenie
-
-    @Test
-    public void shouldCorrectlyDivideNumbersSetInClass() {
-
-
+        assert subtraction.subtractVariablesInClass() == 5;
     }
 
     @Test
-    public void shouldCorrectlyDivideNumbersAsParameters() {
+    public void shouldCorrectlySubtractInDifferentWay() {
+        MathUtils subtraction = new MathUtils(10, 5);
+        assert subtraction.subtractVariablesInClass() == 5;
+    }
+
+    @Test
+    public void shouldCorrectlyMultiply() {
+        MathUtils multiply = new MathUtils();
+        multiply.setNumberA(5);
+        multiply.setNumberB(2);
+        assert multiply.multiplyVariablesInClass() == 10;
+    }
+
+    @Test
+    public void shouldCorrectlyMultiply2() {
+        MathUtils multiply = new MathUtils(5, 9);
+        assert multiply.multiplyVariablesInClass() == 45;
 
     }
 
+    @Test
+    public void xxx() {
+        MathUtils divide = new MathUtils(10,4);
+        assert divide.divideVariablesInClass() == 2.5;
+    }
+
+    @Test
+    public void shouldMultiplyTwoNumbers(){
+       MathUtils multiply = new MathUtils();
+       assert multiply.multiplyTwoParameters(2,3) == 6;
+       assert multiply.multiplyTwoParameters(-1,3) == -3;
+       assert multiply.multiplyTwoParameters(-2, -1) == 2;
+    }
 }
