@@ -23,6 +23,8 @@ public class StudentTest {
         Student slawomir = new Student();
         slawomir.setNumber(20);
         assert slawomir.doubleNumber() == 40;
+
+
     }
 
     @Test

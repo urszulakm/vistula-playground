@@ -9,7 +9,6 @@ public class MathTest {
     @Test
     public void shouldCorrectlyMultiply() {
         Math multiplication = new Math(5,6);
-        assertThat(multiplication.multiply()).isEqualTo(30);
     }
 
     @Test
@@ -17,7 +16,7 @@ public class MathTest {
         Math multi = new Math();
         multi.setNumberOne(3);
         multi.setNumberTwo(4);
-        assert multi.multiply() == 12;
+
     }
 
     @Test

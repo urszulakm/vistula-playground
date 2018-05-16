@@ -50,7 +50,4 @@ public class MathUtils {
         return (float)numberA / (float)numberB;
     }
 
-    public int multiplyTwoParameters(int a, int b){
-        return a*b;
-    }
 }

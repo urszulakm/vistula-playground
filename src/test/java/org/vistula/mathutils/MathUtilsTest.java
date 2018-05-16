@@ -63,11 +63,4 @@ public class MathUtilsTest {
         assert divide.divideVariablesInClass() == 2.5;
     }
 
-    @Test
-    public void shouldMultiplyTwoNumbers(){
-       MathUtils multiply = new MathUtils();
-       assert multiply.multiplyTwoParameters(2,3) == 6;
-       assert multiply.multiplyTwoParameters(-1,3) == -3;
-       assert multiply.multiplyTwoParameters(-2, -1) == 2;
-    }
 }

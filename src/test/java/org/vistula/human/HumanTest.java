@@ -10,6 +10,10 @@ public class HumanTest {
     public void myFirstTest() {
         Human slawek = new Human(19, "Slawek", "X");
         assert slawek.getAge() == 19;
+        assertThat(slawek.getAge()).isEqualTo(19);
+
+        String slawek2 = "gfdjgjkfdgjkl gdfkljgf";
+        assertThat(slawek2).startsWith("gfdjgjkfdgjkl");
     }
 
     @Test
@@ -50,7 +54,6 @@ public class HumanTest {
     public void canBuyAlco() {
         Human slawek = new Human();
         slawek.setAge(19);
-        assertThat(slawek.canBuyAlcohol()).isTrue();
     }
 
 }
