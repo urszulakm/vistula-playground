@@ -36,6 +36,25 @@ public class PersonTest {
     @Test
     public void thirdMethod() {
     }
+    @Test
+    public void contructorWithParam() {
+        Person marcin = new Person(35,"Marcin");
+        assert marcin.getAge() == 35;
+        assert marcin.getName().equals("Marcin");
+    }
 
+    @Test
+    public void shouldDetermineIfAdult() {
+        Person slawek = new Person();
+        slawek.determineIfAdult();
+        assert slawek.isAdult() == true;
+    }
+    @Test
+    public void shouldNotAdult() {
+        Person marcin = new Person();
+        marcin.setAge(16);
+        marcin.determineIfAdult();
+        assert marcin.isAdult() == false;
+    }
 
 }
